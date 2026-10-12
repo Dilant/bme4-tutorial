@@ -98,6 +98,20 @@ Cast a ray from the camera towards the mouse pointer, ignoring occlusion, and re
   - `[*][1:4]`: hit point's coordinate
   - `[*][4:7]`: reflection normal along each axis
 
+::::tip
+
+If the ray hits the starting point, the ID will be `-9999`.
+
+:::warning
+
+The `-9999` here only represents a special label when the ray is irradiated to the starting point,
+and does not mean that the ID of the starting point is `-9999`.
+It is also not allowed to pass in `-9999` to operate the starting point item in other APIs.
+
+:::
+
+::::
+
 ### `PhysicsCheckDuringDestroy(ID: int) -> bool`
 
 Check whether an object is in the shrink-and-destroy process after touching a deathbox
