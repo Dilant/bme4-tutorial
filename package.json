@@ -1,6 +1,6 @@
 {
   "name": "bme4-tutorial",
-  "version": "4.0.0-alpha18",
+  "version": "4.0.0-rc",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

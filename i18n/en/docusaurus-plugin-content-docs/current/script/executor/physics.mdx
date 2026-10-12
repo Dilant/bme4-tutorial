@@ -100,13 +100,16 @@ Cast a ray from the camera towards the mouse pointer, ignoring occlusion, and re
 
 ::::tip
 
-If the ray hits the starting point, the ID will be `-9999`.
+- If the ray hits the starting point, the ID will be `-1000`
+- If the ray hits the first checkpoint, the ID will be `-1001`, the second will be `-1002`, and so on
+- If the ray hits the destination, the ID will be `-2000`
 
 :::warning
 
-The `-9999` here only represents a special label when the ray is irradiated to the starting point,
-and does not mean that the ID of the starting point is `-9999`.
-It is also not allowed to pass in `-9999` to operate the starting point item in other APIs.
+All IDs here only represent the special tags when the ray hits these items,
+and do not represent their actual IDs.
+
+These IDs cannot be passed in other APIs to operate these items.
 
 :::
 
